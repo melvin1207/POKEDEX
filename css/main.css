@@ -1,0 +1,193 @@
+body {
+  background-color: rgb(192, 187, 187);
+}
+
+.card{
+  border-style: none;
+}
+
+.bg-grass{
+  background-color: rgb(54, 136, 54);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-poison{
+  background-color: rgb(107, 55, 128);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-fire{
+  background-color: rgb(221, 128, 41);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-water{
+  background-color: rgb(46, 154, 204);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-bug{
+  background-color: rgb(35, 216, 74);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-flying{
+  background: linear-gradient(to right, rgb(0, 162, 255), gray);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-normal{
+  background-color: gray;
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-dark{
+  background-color: rgb(10, 10, 10);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+.bg-electric{
+  background-color: rgb(247, 231, 16);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-fighting{
+  background-color: rgb(247, 70, 16);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-ice{
+  background-color: rgb(10, 182, 167);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-ground{
+  background-color: rgb(95, 59, 6);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-steel{
+  background-color: rgb(151, 153, 153);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-fairy{
+  background-color: rgb(236, 133, 228);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-dragon{
+  background-color: rgb(255, 0, 0);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-ghost{
+  background-color: rgb(140, 5, 250);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-psychic{
+  background: linear-gradient(to right, pink, gray);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+.bg-rock{
+  background: linear-gradient(to right, rgb(99, 28, 6), gray);
+  padding: 3px;
+  border-radius: 5px;
+  align-self: center;
+  text-align: center;
+  font-weight: bold;
+  color: aliceblue;
+}
+
+#bodyModal{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: center;
+}
