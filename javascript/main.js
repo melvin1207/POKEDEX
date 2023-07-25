@@ -1,32 +1,5 @@
-import {
-  showInfo,
-  showInfo0,
-  showInfo1,
-  showInfo2,
-  showInfo3,
-  showInfo4,
-  showInfo5,
-  showInfo6,
-  showInfo7,
-  showInfo8,
-  showInfo9,
-  showInfo10,
-  showInfo11,
-  showInfo12,
-  showInfo13,
-  showInfo14,
-  showInfo15,
-  showInfo16,
-  showInfo17,
-  showInfo18,
-  showInfo19,
-  showInfo20,
-  showInfo21,
-  showInfo22,
-} from "./functions/function.js";
+import { buscadorPokemon, showInfo } from "./functions/function.js";
 const pokemonCards = document.querySelector("#pokemonCards");
-const modalTitle = document.querySelector("#modalTitle");
-const bodyModal = document.querySelector("#bodyModal");
 const nameInput = document.querySelector("#nameInput");
 const URLactual = window.location.pathname.toString();
 
@@ -46,78 +19,78 @@ function nameFilter(pokemones) {
     const filteredPokemon = pokemones.filter((pokemon) =>
       pokemon.name.toLowerCase().includes(name)
     );
-    showInfo(filteredPokemon);
+    buscadorPokemon(filteredPokemon);
     if (name === "") {
       pokemonCards.innerHTML = "";
       switch (URLactual) {
         case "/pages/index.html":
-          showInfo0(pokemones);
+          showInfo(pokemones, 0, 38);
           break;
         case "/pages/page2.html":
-          showInfo1(pokemones);
+          showInfo(pokemones, 39, 77);
           break;
         case "/pages/page3.html":
-          showInfo2(pokemones);
+          showInfo(pokemones, 78, 116);
           break;
         case "/pages/page4.html":
-          showInfo3(pokemones);
+          showInfo(pokemones, 117, 155);
           break;
         case "/pages/page5.html":
-          showInfo4(pokemones);
+          showInfo(pokemones, 156, 194);
           break;
         case "/pages/page6.html":
-          showInfo5(pokemones);
+          showInfo(pokemones, 195, 233);
           break;
         case "/pages/page7.html":
-          showInfo6(pokemones);
+          showInfo(pokemones, 234, 272);
           break;
         case "/pages/page8.html":
-          showInfo7(pokemones);
+          showInfo(pokemones, 273, 311);
           break;
         case "/pages/page9.html":
-          showInfo8(pokemones);
+          showInfo(pokemones, 312, 350);
           break;
         case "/pages/page10.html":
-          showInfo9(pokemones);
+          showInfo(pokemones, 351, 389);
           break;
         case "/pages/page11.html":
-          showInfo10(pokemones);
+          showInfo(pokemones, 390, 428);
           break;
         case "/pages/page12.html":
-          showInfo11(pokemones);
+          showInfo(pokemones, 429, 467);
           break;
         case "/pages/page13.html":
-          showInfo12(pokemones);
+          showInfo(pokemones, 468, 506);
           break;
         case "/pages/page14.html":
-          showInfo13(pokemones);
+          showInfo(pokemones, 507, 545);
           break;
         case "/pages/page15.html":
-          showInfo14(pokemones);
+          showInfo(pokemones, 546, 584);
           break;
         case "/pages/page16.html":
-          showInfo15(pokemones);
+          showInfo(pokemones, 585, 623);
           break;
         case "/pages/page17.html":
-          showInfo16(pokemones);
+          showInfo(pokemones, 624, 662);
           break;
         case "/pages/page18.html":
-          showInfo17(pokemones);
+          showInfo(pokemones, 663, 701);
           break;
         case "/pages/page19.html":
-          showInfo18(pokemones);
+          showInfo(pokemones, 702, 740);
           break;
         case "/pages/page20.html":
-          showInfo19(pokemones);
+          showInfo(pokemones, 741, 779);
           break;
         case "/pages/page21.html":
-          showInfo10(pokemones);
+          showInfo(pokemones, 780, 818);
           break;
         case "/pages/page22.html":
-          showInfo21(pokemones);
+          showInfo(pokemones, 819, 857);
           break;
         case "/pages/page23.html":
-          showInfo22(pokemones);
+          showInfo(pokemones, 858, 896);
           break;
         default:
           break;
@@ -127,51 +100,77 @@ function nameFilter(pokemones) {
 }
 
 function info(data) {
-  if (URLactual === "/pages/index.html") {
-    showInfo0(data);
-  } else if (URLactual === "/pages/page2.html") {
-    showInfo1(data);
-  } else if (URLactual === "/pages/page3.html") {
-    showInfo2(data);
-  } else if (URLactual === "/pages/page4.html") {
-    showInfo3(data);
-  } else if (URLactual === "/pages/page5.html") {
-    showInfo4(data);
-  } else if (URLactual === "/pages/page6.html") {
-    showInfo5(data);
-  } else if (URLactual === "/pages/page7.html") {
-    showInfo6(data);
-  } else if (URLactual === "/pages/page8.html") {
-    showInfo7(data);
-  } else if (URLactual === "/pages/page9.html") {
-    showInfo8(data);
-  } else if (URLactual === "/pages/page10.html") {
-    showInfo9(data);
-  } else if (URLactual === "/pages/page11.html") {
-    showInfo10(data);
-  } else if (URLactual === "/pages/page12.html") {
-    showInfo11(data);
-  } else if (URLactual === "/pages/page13.html") {
-    showInfo12(data);
-  } else if (URLactual === "/pages/page14.html") {
-    showInfo13(data);
-  } else if (URLactual === "/pages/page15.html") {
-    showInfo14(data);
-  } else if (URLactual === "/pages/page16.html") {
-    showInfo15(data);
-  } else if (URLactual === "/pages/page17.html") {
-    showInfo16(data);
-  } else if (URLactual === "/pages/page18.html") {
-    showInfo17(data);
-  } else if (URLactual === "/pages/page19.html") {
-    showInfo18(data);
-  } else if (URLactual === "/pages/page20.html") {
-    showInfo19(data);
-  } else if (URLactual === "/pages/page21.html") {
-    showInfo20(data);
-  } else if (URLactual === "/pages/page22.html") {
-    showInfo21(data);
-  } else if (URLactual === "/pages/page23.html") {
-    showInfo22(data);
+  switch (URLactual) {
+    case "/pages/index.html":
+      showInfo(data, 0, 38);
+      break;
+    case "/pages/page2.html":
+      showInfo(data, 39, 77);
+      break;
+    case "/pages/page3.html":
+      showInfo(data, 78, 116);
+      break;
+    case "/pages/page4.html":
+      showInfo(data, 117, 155);
+      break;
+    case "/pages/page5.html":
+      showInfo(data, 156, 194);
+      break;
+    case "/pages/page6.html":
+      showInfo(data, 195, 233);
+      break;
+    case "/pages/page7.html":
+      showInfo(data, 234, 272);
+      break;
+    case "/pages/page8.html":
+      showInfo(data, 273, 311);
+      break;
+    case "/pages/page9.html":
+      showInfo(data, 312, 350);
+      break;
+    case "/pages/page10.html":
+      showInfo(data, 351, 389);
+      break;
+    case "/pages/page11.html":
+      showInfo(data, 390, 428);
+      break;
+    case "/pages/page12.html":
+      showInfo(data, 429, 467);
+      break;
+    case "/pages/page13.html":
+      showInfo(data, 468, 506);
+      break;
+    case "/pages/page14.html":
+      showInfo(data, 507, 545);
+      break;
+    case "/pages/page15.html":
+      showInfo(data, 546, 584);
+      break;
+    case "/pages/page16.html":
+      showInfo(data, 585, 623);
+      break;
+    case "/pages/page17.html":
+      showInfo(data, 624, 662);
+      break;
+    case "/pages/page18.html":
+      showInfo(data, 663, 701);
+      break;
+    case "/pages/page19.html":
+      showInfo(data, 702, 740);
+      break;
+    case "/pages/page20.html":
+      showInfo(data, 741, 779);
+      break;
+    case "/pages/page21.html":
+      showInfo(data, 780, 818);
+      break;
+    case "/pages/page22.html":
+      showInfo(data, 819, 857);
+      break;
+    case "/pages/page23.html":
+      showInfo(data, 858, 896);
+      break;
+    default:
+      break;
   }
 }
