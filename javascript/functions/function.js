@@ -1,5 +1,4 @@
 function buscadorPokemon(pokemones) {
-  console.log(pokemones);
   pokemonCards.innerHTML = "";
   pokemones.forEach((pokemon) => {
     const image = document.createElement("p");
@@ -26,7 +25,7 @@ function buscadorPokemon(pokemones) {
   const asignColorType = document.getElementsByClassName("tipo");
   const moreInfo = document.querySelectorAll(".moreInfo");
 
-  buildModalN(moreInfo, pokemones, asignColorType);
+  buildModalBusqueda(moreInfo, pokemones, asignColorType);
 
   asignColor(asignColorType);
 }
@@ -63,9 +62,8 @@ function showInfo(pokemones, min, max) {
   asignColor(asignColorType);
 }
 
-function buildModalN(moreInfo, pokemones, asignColorType) {
+function buildModalBusqueda(moreInfo, pokemones, asignColorType) {
   var URLactual = window.location.pathname.toString();
-  console.log(URLactual);
   moreInfo.forEach((nodo, index) => {
     nodo.addEventListener("click", function (e) {
       modalTitle.innerHTML = `${pokemones[index].name}`;
