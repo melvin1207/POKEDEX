@@ -1,6 +1,11 @@
 body {
-  background-color: rgb(192, 187, 187);
+  background-image: linear-gradient(rgba(34, 37, 46, 0.726), rgba(34, 37, 46, 0.75)), url(/assets/images/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
+
+
 
 .card{
   border-style: none;
