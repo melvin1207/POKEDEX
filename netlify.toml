@@ -1,0 +1,3 @@
+[build]
+  base ="/"
+  publish = "Pagés/index.html"
